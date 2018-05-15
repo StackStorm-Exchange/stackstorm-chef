@@ -1,7 +1,7 @@
 ---
 ref: chef
 name : chef
-description : st2 chef integration pack
+description : Chef Configuration Management
 keywords:
   - chef
   - chef-client
@@ -10,6 +10,6 @@ keywords:
   - cfg management
   - configuration management
   - opscode
-version : 0.1.1
+version : 0.1.2
 author : StackStorm, Inc.
 email : info@stackstorm.com
