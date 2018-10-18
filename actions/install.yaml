@@ -1,6 +1,6 @@
 ---
 name: 'install'
-runner_type: 'run-remote-script'
+runner_type: 'remote-shell-script'
 description: 'Performs installation of chef-client on remote nodes'
 enabled: true
 entry_point: 'chef_install.py'

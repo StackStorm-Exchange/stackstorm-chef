@@ -1,6 +1,6 @@
 ---
 name: 'client'
-runner_type: 'run-remote-script'
+runner_type: 'remote-shell-script'
 description: 'Performs chef-client run on remote hosts.'
 enabled: true
 entry_point: 'chef_client.py'

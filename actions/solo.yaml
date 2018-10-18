@@ -1,6 +1,6 @@
 ---
 name: 'solo'
-runner_type: 'run-remote-script'
+runner_type: 'remote-shell-script'
 description: 'Performs chef-solo run on remote hosts.'
 enabled: true
 entry_point: 'chef_solo.py'

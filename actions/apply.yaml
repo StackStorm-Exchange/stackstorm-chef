@@ -1,6 +1,6 @@
 ---
 name: 'apply'
-runner_type: 'run-remote-script'
+runner_type: 'remote-shell-script'
 description: 'Performs one-off resource converge on remote hosts.'
 enabled: true
 entry_point: 'chef_apply.py'
