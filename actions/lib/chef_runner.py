@@ -2,7 +2,7 @@
 
 import sys
 from lib import shellhelpers as shell
-from locate_binary import LocateBinary
+from lib.locate_binary import LocateBinary
 
 
 class ChefRunner(LocateBinary, object):
@@ -33,7 +33,7 @@ class ChefRunner(LocateBinary, object):
 
     def execute(self):
         parser = shell.CmdlineParser(self.cmdline_options)
-        command = ([self.locate_binary(self.chef_binary)] +
+        command = ([self.locate_binary(self.chef_binary)] +  # pylint: disable=import-error
                    parser.short_arglist())
         exit_code = shell.shell_out(command)
         sys.exit(exit_code)
