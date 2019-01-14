@@ -31,7 +31,7 @@ class ChefApplyRunner(ChefRunner):
         recipe_file = args_dict.pop('recipe_file')
 
         # We run one-off command ignoring recipe_file
-        command = ([self.locate_binary(self.chef_binary)] +  # pylint: disable=no-member
+        command = ([self.locate_binary(self.chef_binary)] +  # pylint: disable=import-error
                    parser.short_arglist(kwargs=args_dict))
 
         # We execute from a recipe, no execute is given
